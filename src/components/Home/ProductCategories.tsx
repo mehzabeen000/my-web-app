@@ -15,7 +15,7 @@ const ProductCategories = () => {
         dispatch(setCategory(data))
       })
       .catch(error => console.error('Error fetching categories:', error));
-  }, []);
+  }, [categories.length, dispatch]);
 
   const handleCategoryClick = (category: any) => {
     dispatch(setSelectedCategory(category))

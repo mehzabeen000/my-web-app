@@ -25,7 +25,7 @@ const LandingPage = () => {
       })
       .catch(error => console.error('Error fetching categories:', error));
 
-  }, [selectedCategory])
+  }, [dispatch, navigate, selectedCategory])
 
   return (
     <div>
