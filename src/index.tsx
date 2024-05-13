@@ -3,7 +3,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,10 +14,10 @@ const root = createRoot(container!);
 
 root.render(
   <Provider store={store}>
-    <BrowserRouter>
-      <ToastContainer autoClose={2500} style={{ zIndex: 999999999 }} position='bottom-left' />
-      <App />
-    </BrowserRouter>
+    {/* <BrowserRouter> */}
+    <ToastContainer autoClose={2500} style={{ zIndex: 999999999 }} position='bottom-left' />
+    <App />
+    {/* </BrowserRouter> */}
   </Provider>
 );
 
