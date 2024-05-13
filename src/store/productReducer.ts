@@ -33,7 +33,7 @@ const productSlice = createSlice({
     },
     removeItemFromCart(state, action) {
       const removedItemId = action.payload?.id;
-      const index = state.cart.findIndex((item: any) => item?.id === removedItemId && item?.title == action.payload.title);
+      const index = state.cart.findIndex((item: any) => item?.id === removedItemId && item?.title === action.payload.title);
       if (index !== -1) {
         state.cart.splice(index, 1);
       }
