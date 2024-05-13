@@ -1,0 +1,15 @@
+/* This is for Webkit browsers like Chrome, Safari */
+::-webkit-scrollbar {
+  width: 0;   /* Set width to 0 to hide scrollbar */
+  height: 0;  /* Set height to 0 to hide horizontal scrollbar */
+}
+
+/* This is for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Optional: This is for IE */
+body {
+  -ms-overflow-style: none;  /* Hide scrollbar for IE */
+}
